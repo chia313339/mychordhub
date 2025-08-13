@@ -1,5 +1,4 @@
 # 開發環境配置
-version: '3.8'
 
 services:
   frontend:

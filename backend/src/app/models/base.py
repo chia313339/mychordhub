@@ -2,7 +2,6 @@
 Base model class with common fields.
 """
 from datetime import datetime
-from typing import Any
 
 from sqlalchemy import Column, DateTime, Integer
 from sqlalchemy.ext.declarative import as_declarative, declared_attr
@@ -12,8 +11,7 @@ from sqlalchemy.ext.declarative import as_declarative, declared_attr
 class Base:
     """Base class for all database models."""
     
-    id: Any
-    __name__: str
+    __allow_unmapped__ = True
     
     # Generate __tablename__ automatically
     @declared_attr
