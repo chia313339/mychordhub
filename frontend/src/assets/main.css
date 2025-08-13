@@ -1,0 +1,176 @@
+@import './base.css';
+@import './components.css';
+
+/* MyChordHub 全局樣式 */
+:root {
+  --color-chord-primary: #2563eb;
+  --color-chord-primary-dark: #1d4ed8;
+  --color-chord-secondary: #64748b;
+  --color-chord-accent: #f59e0b;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-yellow-400: #fbbf24;
+}
+
+body {
+  background-color: white;
+  color: var(--color-gray-900);
+  font-family: sans-serif;
+}
+
+/* 主題色彩類 */
+.bg-chord-primary {
+  background-color: var(--color-chord-primary);
+}
+
+.bg-chord-primary-dark {
+  background-color: var(--color-chord-primary-dark);
+}
+
+.text-chord-primary {
+  color: var(--color-chord-primary);
+}
+
+.text-chord-primary-dark {
+  color: var(--color-chord-primary-dark);
+}
+
+.hover\:text-chord-primary-dark:hover {
+  color: var(--color-chord-primary-dark);
+}
+
+/* 漸變背景 */
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--1), var(--2));
+}
+
+.from-chord-primary {
+  --1: var(--color-chord-primary);
+}
+
+.to-chord-primary-dark {
+  --2: var(--color-chord-primary-dark);
+}
+
+/* 按鈕樣式 */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+/* 卡片樣式 */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* 基本容器樣式 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 響應式網格 */
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+/* 基本工具類 */
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
